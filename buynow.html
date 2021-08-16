@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        *{
+            
+            margin: 0;
+            padding: 0;
+           
+        }
+         nav {
+            width: 100%;
+            background: grey;
+            height: 50px;
+            position: fixed;
+        }
+
+        #nav-right {
+            line-height: 50px;
+            padding-right: 70px;
+        }
+    </style>
+     <!-- header -->
+     <div style="background-color: aliceblue;">
+        <nav>
+            <a><img src="apple.png" alt="Apple Logo"></a>
+            <a>Store</a>
+            <a>Mac</a>
+            <a>Ipad</a>
+            <a>Tab</a>
+            <div id="nav-right" style="float: right;">
+                <input type="text" name="" id="" placeholder="Search">
+                <a style="padding-left: 15px; font-weight: bold;">BUY</a>
+                <a style="padding-left: 15px;font-weight: bold;">Support</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="c1">
+    </div>
+
+    <!-- details -->
+     
+     <div class="bg">
+    <H3 style="color: aliceblue;">Fill the Detail below before buy:</H3>
+    <div class="form-group">
+        <form action="submit" method="POST">
+            <table>
+                <tr>
+                    <td><label>Name<span>*</span></label></td>
+                    <td><input type="text" name="customer_name" placeholder="Your Name" required></td>
+                </tr>
+                <tr>
+                    <td><label>DoB</label></td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><select>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="others">Others</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>Email<span>*</span></label></td>
+                    <td><input type="email" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Mobile<span>*</span></label></td>
+                    <td><input type="tel" required></td>
+                </tr>
+            
+
+            </table>
+
+            <!-- address -->
+            <fieldset>
+                <legend>Delivery Address</legend>
+                <table id="address_table">
+                    <tr>
+                        <td><label>Door No.</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Street <span>*</span></label></td>
+                        <td><input type="text" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>City</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>State<span>*</span></label></td>
+                        <td> <input type="text" value="TamilNadu" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>PIN<span>*</span></label></td>
+                        <td><input type="text" required pattern="[0-9]{6}" placeholder="638453"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="checkbox" required > Are you above 18 years<span></span> *</span></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="submit_form">
+                <input type="submit" value="Submit" >
+            </div>
+            
+        </form>
+
+        <div class="purchase">
+            <form>
+                <table>
+                    <tr>
+                        <td>Are you want to buy in our :</td>
+                        <td><input type="radio" name="store" > Online Store 
+                            <br>
+                         <input type="radio" name="store" required> Offline Store</td>
+                    </tr>
+
+                    <tr><td>
+                        Are you pay via EMI
+                    </td>
+                <td><input type="radio" name="Emi" i> Yes
+                <br><input type="radio" name="Emi" required> No</td></tr>
+
+                <tr>
+                    <td>Quantity </td>
+                    <td><input type="number" min="1"  max="5" value="1" required></td>
+                </tr>
+                <tr>
+                    <td>In addition you want:</td>
+                    <td><select multiple>
+                        <option>Bag</option>
+                        <option>Cover</option>
+                        <option>Pendrive</option>
+                        <option >Mouse</option>
+                        <option >KeyBoard</option>
+                    </select></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        confirm your order 
+                    </td>
+                    <td>
+                        <input type="checkbox" name="confirm" id="" required>confirm
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" ><button id="place_order" >Place Order</button></td>
+                </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
